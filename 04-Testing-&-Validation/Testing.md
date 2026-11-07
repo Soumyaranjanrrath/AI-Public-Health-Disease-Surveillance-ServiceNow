@@ -99,7 +99,7 @@ Use synthetic data and mask real patient information. Each evidence image should
 
 ## 9. Test execution status
 
-The project owner reports US-01 through US-10 as completed and verified in Jira. This repository will add story-specific screenshots and detailed test records when supplied. US-11 and US-12 are not implemented and therefore have no completed test status.
+The project owner reports US-01 through US-10 as completed and verified in Jira. This repository will add story-specific screenshots and detailed test records when supplied. US-11 and US-12 are In Progress in Jira and have no completed verification status. Their implementation and test evidence must be added after the stories are finished.
 
 ## 10. Related documents
 
