@@ -47,7 +47,7 @@ These implementation details are not assumed in this document because the story 
 
 ## Evidence
 
-The supplied Jira screenshot shows PHDS-13 as In Progress. No US-11 implementation attachment was visible in that screenshot. Add implementation and test screenshots only after they exist.
+The supplied Jira screenshot shows PHDS-13 as In Progress. No Jira attachment filename was visible in the supplied issue view. See [Jira issue screenshot](../../ScreenShots/Phase-01/Jira_User_Stories/Jira_US-11_PHDS-13.png). Add implementation and test screenshots only after they exist.
 
 ## Related stories
 
