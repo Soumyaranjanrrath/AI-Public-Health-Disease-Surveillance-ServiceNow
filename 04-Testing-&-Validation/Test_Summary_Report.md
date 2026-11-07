@@ -22,8 +22,8 @@ This report records the current project-level status. It does not invent a numer
 | US-08 | Outbreak Alert Notifications | Completed and verified |
 | US-09 | Public Health Dashboard and Analytics | Completed and verified |
 | US-10 | AI-Based Outbreak Risk Prediction | Completed and verified |
-| US-11 | AI-Assisted Case Prioritization | Not implemented |
-| US-12 | AI-Assisted Investigation Insights | Not implemented |
+| US-11 | AI-Assisted Case Prioritization | In Progress; not completed or verified |
+| US-12 | AI-Assisted Investigation Insights | In Progress; not completed or verified |
 
 ## 3. Available verification information
 
@@ -73,7 +73,7 @@ To make this report fully auditable, attach or transcribe:
 - The supplied API test establishes a successful sample response, not predictive accuracy.
 - The seven-day relative date condition should be verified against the desired execution-time behavior.
 - The Outbreak Alert Time Window field mapping should be checked separately from the seven-day lookup filter.
-- US-11 and US-12 have not been implemented or tested.
+- US-11 and US-12 are In Progress in Jira; neither is completed or verified yet.
 
 ## 7. Conclusion
 
