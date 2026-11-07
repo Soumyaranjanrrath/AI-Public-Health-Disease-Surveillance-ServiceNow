@@ -1,12 +1,17 @@
-# US-05 – Outbreak Monitoring
+# US-05 – Public Health Officer: Outbreak Monitoring
+
+## Jira reference
+
+**Issue:** PHDS-7  
+**Status shown:** Done
 
 ## User story
 
-**As a** Public Health Officer, **I want** the application to monitor disease cases for configured disease-location clusters, **so that** a potential outbreak can be identified when the defined case threshold is reached.
+**As a** Public Health Officer, **I want** to monitor disease cases by location and time, **so that** I can identify possible outbreak situations.
 
 ## Objective
 
-Automate the initial threshold-based detection of possible outbreak clusters and create an Outbreak Alert record when the configured matching case count reaches the threshold.
+Automate the initial threshold-based detection of possible outbreak clusters and create an Outbreak Alert when the configured matching case count reaches the threshold.
 
 ## ServiceNow components
 
@@ -18,48 +23,50 @@ Automate the initial threshold-based detection of possible outbreak clusters and
 
 ## Initial detection logic
 
-The initial flow was recorded as:
+The initial US-05 flow is recorded as:
 
 1. Trigger when a Disease Case is created.
-2. Look up Disease Case records matching the trigger's Disease Name and Location.
-3. Check whether the lookup count is greater than or equal to 3.
+2. Look up Disease Case records matching the trigger Disease Name and Location.
+3. Check whether the matching-record count reaches the configured threshold of 3.
 4. Create an Outbreak Alert when the threshold condition is met.
 
-**Important distinction:** The original US-05 implementation was threshold-based and did not yet apply the seven-day reporting-date filter. The time-window enhancement belongs to US-07.
+**Scope distinction:** The original US-05 implementation was threshold-based. The seven-day reporting-date condition and existing-alert case-count synchronization are documented as the US-07 enhancement.
 
 ## Outbreak Alert information
 
-The original alert mapping included:
+The Jira completion note states that the automatically created alert includes:
+- Disease Name.
+- Location.
+- Case Count.
+- Detection Date.
+- Threshold.
+- Alert Status.
+- Time Window.
+- Description.
 
-- Disease Name from the trigger case.
-- Location from the trigger case.
-- Case Count from the matching-record lookup count.
-- Threshold: 3.
-- Alert Status: Possible Outbreak.
-- Time Window field.
-- Description indicating that a possible outbreak was detected based on the case threshold.
-- Detection Date mapped from the trigger record's date information.
+The configured threshold used in the recorded test was 3.
 
-## Verification evidence from project notes
+## Verification
 
-The implementation history records three matching Dengue / Bhubaneswar test cases:
+The Jira completion note records a test using three Dengue cases reported from Bhubaneswar. The workflow automatically generated:
 
-- `DSC0001014`
-- `DSC0001016`
-- `DSC0001017`
-
-The flow generated Outbreak Alert `OUA0001001` with a case count of 3.
+- **Outbreak Alert:** `OUA0001001`
+- **Case Count:** 3
+- **Threshold:** 3
 
 The project owner reports US-05 as completed and verified.
 
+**Jira status:** Done.
+
 ## Evidence
 
-- Outbreak Alert Monitoring flow: `../../../../ScreenShots/Phase-03/`
-- Matching test cases and generated alert: `../../../../ScreenShots/Phase-04/`
+- Jira issue screenshot: `../../../../ScreenShots/Phase-01/Jira_User_Stories/Jira_US-05_PHDS-7.png`
+- Flow configuration: add the actual ServiceNow screenshot under `ScreenShots/Phase-03/`.
+- Three matching test cases and generated alert OUA0001001: add actual ServiceNow screenshots under `ScreenShots/Phase-04/`.
 
 ## Known behavior before US-07
 
-The initial threshold-only flow could generate repeated alerts when later case creation events again satisfied the threshold. The subsequent time-based story adds a matching-alert lookup before creating a new alert.
+The initial threshold-only flow could generate repeated alerts when later case-creation events again satisfied the threshold. The subsequent US-07 work adds a lookup for existing alerts and synchronizes the case count on a matching alert.
 
 ## Related stories
 
