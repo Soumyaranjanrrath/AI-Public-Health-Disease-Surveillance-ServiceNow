@@ -1,8 +1,13 @@
-# US-06 – System Administration
+# US-06 – Administrator: User and System Management
+
+## Jira reference
+
+**Issue:** PHDS-8  
+**Status shown:** Done
 
 ## User story
 
-**As a** System Administrator, **I want** to manage application configuration and access, **so that** the application can be maintained and users can perform authorized operations.
+**As an** Administrator, **I want** to manage users, roles, hospitals, and disease information, **so that** the surveillance platform remains properly configured and controlled.
 
 ## Objective
 
@@ -25,7 +30,7 @@ Establish the administrative role and application access configuration needed to
 
 ## Administrative access
 
-The project implementation notes state that the System Administrator role has full CRUD access to the following custom tables through configured ACLs:
+The Jira completion note states that the System Administrator role has full Create, Read, Write, and Delete permissions for the application's core tables:
 
 1. Disease Case
 2. Hospital
@@ -42,16 +47,20 @@ The project implementation notes state that the System Administrator role has fu
 
 ## Verification
 
-The project owner reports US-06 as completed and verified.
+The Jira completion note states that the System Administrator can access and manage the application's data and configuration.
+
+**Jira status:** Done.
 
 ## Scope clarification
 
-This story uses ServiceNow's administrative capabilities and configured application roles/ACLs. The project context does **not** establish that a separate custom user-management interface was built; this document does not claim one.
+This evidence supports the System Administrator role and table-access configuration. It does not, by itself, establish that a separate custom user-management interface was developed. This document does not claim one.
 
 ## Evidence
 
-- Application roles and navigator modules: `../../../../ScreenShots/Phase-03/`
-- ACL configuration and role impersonation tests: `../../../../ScreenShots/Phase-04/`
+- Jira issue screenshot: `../../../../ScreenShots/Phase-01/Jira_User_Stories/Jira_US-06_PHDS-8.png`
+- Application roles, navigator modules, ACL configuration, and administrative access tests: add actual ServiceNow screenshots under `ScreenShots/Phase-03/` and `ScreenShots/Phase-04/`.
+
+Two supplied Jira screenshots show the same issue PHDS-8. They are separate views of one Jira story, not separate user stories.
 
 ## Related stories
 
