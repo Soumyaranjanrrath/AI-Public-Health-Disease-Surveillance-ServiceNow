@@ -183,7 +183,7 @@ The supplied API documentation states that the model uses synthetic prototype su
 - The US-10 prediction service is external to the ServiceNow instance.
 - The API expects historical cases to be supplied by its caller; it does not independently query the ServiceNow database.
 - The local API requires the persisted model artifact at the configured path.
-- US-11 and US-12 are planned extensions and are not represented as implemented components.
+- US-11 and US-12 are in progress in Jira and are not represented as implemented components; they must remain unmarked as completed until implementation and verification are finished.
 
 ## 9. Related documents
 
