@@ -49,7 +49,7 @@ The project owner reports US-02 as completed and verified. The displayed Pending
 
 ## Evidence
 
-- Jira issue screenshot: `../../../../ScreenShots/Phase-01/Jira_User_Stories/Jira_US-02_PHDS-2.png`
+- Jira issue screenshot: `../../ScreenShots/Phase-01/Jira_User_Stories/Jira_US-02_PHDS-2.png`
 - Laboratory Report form and linked test record: add actual ServiceNow screenshots under `ScreenShots/Phase-03/` and `ScreenShots/Phase-04/`.
 
 ## Notes
