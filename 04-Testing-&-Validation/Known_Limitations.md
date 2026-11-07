@@ -44,8 +44,8 @@ Earlier versions of the flow created multiple alerts for some disease-location c
 
 ## 5. Scope limitations
 
-- US-11 – AI-Assisted Case Prioritization is planned and not implemented.
-- US-12 – AI-Assisted Investigation Insights is planned and not implemented.
+- US-11 – AI-Assisted Case Prioritization is In Progress in Jira and is not yet completed or verified.
+- US-12 – AI-Assisted Investigation Insights is In Progress in Jira and is not yet completed or verified.
 - The project does not claim production deployment in a real hospital or public-health organization.
 - Exact ServiceNow notification configuration and dashboard widget details should be supported by screenshots before being described at a lower implementation level.
 
