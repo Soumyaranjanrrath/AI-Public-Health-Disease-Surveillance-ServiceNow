@@ -1,32 +1,39 @@
-# US-03 – Public Health Officer Case Review
+# US-03 – Public Health Officer: Case Review
+
+## Jira reference
+
+**Issue:** PHDS-5  
+**Status shown:** Done
 
 ## User story
 
-**As a** Public Health Officer, **I want** to review disease case information, **so that** I can assess reported cases using the available surveillance details.
+**As a** Public Health Officer, **I want** to review reported and verified disease cases, **so that** I can decide what action is required for each case.
 
 ## Objective
 
-Provide Public Health Officers with access to the disease case information required for surveillance review while following the configured read-only access policy.
+Provide Public Health Officers with access to disease case information required for surveillance review while enforcing read-only access to case records.
 
 ## ServiceNow components
 
 - Disease Case table and form.
 - Public Health Officer application role.
-- Table/field ACL configuration.
+- Table and field ACL configuration.
 
 ## Review information
 
-The project context identifies the following case information as relevant to PHO review:
-
-- Disease name and disease status.
-- Case status and severity.
+The Jira completion note states that PHO can view:
+- Disease details.
+- Case status.
 - Laboratory verification status.
-- Reporting and symptom-onset dates.
-- Patient and location information.
+- Severity.
+- Date reported.
+- Symptom onset date.
+- Patient information.
+- Location details.
 
-## Access design
+## Access behavior
 
-The PHO role is intended to have read-only access to case records. The project's role-based access testing notes record that PHO access was tested through impersonation and ACL verification.
+The Jira completion note explicitly states that the Public Health Officer has read-only access to case information and cannot modify the records.
 
 ## Implementation summary
 
@@ -36,16 +43,20 @@ The PHO role is intended to have read-only access to case records. The project's
 
 ## Verification
 
-The project owner reports US-03 as completed and verified. The exact ACL names and individual test-case identifiers should be transcribed from the instance screenshots or Jira record when those are uploaded.
+The project owner reports US-03 as completed and verified.
+
+**Jira status:** Done.
+
+Exact ACL names and individual test identifiers should be transcribed from the ServiceNow configuration or screenshots if those details are needed.
 
 ## Evidence
 
-- PHO role and case access configuration: `../../../../ScreenShots/Phase-03/`
-- Impersonation and read-only verification: `../../../../ScreenShots/Phase-04/`
+- Jira issue screenshot: `../../../../ScreenShots/Phase-01/Jira_User_Stories/Jira_US-03_PHDS-5.png`
+- PHO role, case review, impersonation, and read-only verification: add actual ServiceNow screenshots under `ScreenShots/Phase-03/` and `ScreenShots/Phase-04/`.
 
-## Notes
+## Privacy note
 
-Do not publish real patient information in screenshots. Mask names and other personal details.
+Mask patient names and all personal details in publicly shared evidence.
 
 ## Related stories
 
