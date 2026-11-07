@@ -82,7 +82,7 @@ The requirements are grouped by workflow area and mapped to the project user sto
 
 ## 11. Planned AI enhancements
 
-The following are future requirements, not implemented functionality:
+The following requirements are in progress and are not yet implemented:
 
 | ID | Planned requirement | Related story |
 |---|---|---|
