@@ -57,7 +57,7 @@ The Jira completion note states that a disease case record was successfully crea
 
 ## Evidence
 
-- Jira issue screenshot: `../../../../ScreenShots/Phase-01/Jira_User_Stories/Jira_US-01_PHDS-1.png`
+- Jira issue screenshot: `../../ScreenShots/Phase-01/Jira_User_Stories/Jira_US-01_PHDS-1.png`
 - Disease Case table/form and test record: add actual ServiceNow screenshots under `ScreenShots/Phase-03/` and `ScreenShots/Phase-04/`.
 
 ## Privacy note
