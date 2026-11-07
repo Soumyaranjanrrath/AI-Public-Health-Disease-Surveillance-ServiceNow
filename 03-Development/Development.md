@@ -112,8 +112,8 @@ The model was trained on synthetic prototype data and synthetic analyst-assigned
 | US-08 | Alert notifications | Completed and verified |
 | US-09 | Dashboard and analytics | Completed and verified |
 | US-10 | ML outbreak risk prediction | Completed and verified |
-| US-11 | AI-assisted case prioritization | Planned |
-| US-12 | AI-assisted investigation insights | Planned |
+| US-11 | AI-assisted case prioritization | In Progress; not completed |
+| US-12 | AI-assisted investigation insights | In Progress; not completed |
 
 ## 8. Development evidence
 
