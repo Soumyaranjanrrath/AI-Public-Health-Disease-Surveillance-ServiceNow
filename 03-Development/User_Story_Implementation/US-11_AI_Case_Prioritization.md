@@ -1,74 +1,53 @@
 # US-11 – AI-Assisted Case Prioritization
 
+## Jira reference
+
+**Issue:** PHDS-13  
+**Status shown:** In Progress  
+**Jira assignee shown:** Moningi Vinay Kumar
+
 ## User story
 
-**As a** Public Health Officer, **I want** the system to provide an AI-assisted priority recommendation for disease cases, **so that** cases that may require earlier review can be identified for attention.
+**As a** Public Health Officer, **I want** disease cases to be prioritized based on severity and outbreak risk, **so that** high-priority cases can be reviewed first.
 
-## Status
+## Current status
 
-<badge>Planned – Not implemented</badge>
+<badge color="info">In Progress – Not completed</badge>
 
-The project owner has confirmed that US-11 is one of the two remaining user stories. This page documents the intended scope only; it does not claim that a model, flow, ServiceNow field, or user interface has been built.
+This story is actively tracked in Jira but has not been reported as completed or verified.
 
-## Proposed objective
+## Completion criteria recorded in Jira
 
-Extend the surveillance workflow with a case-priority recommendation that can help a Public Health Officer review incoming cases in a consistent order.
+- Implement an AI-assisted case prioritization mechanism using disease case severity and outbreak risk information.
+- Configure priority levels such as **Critical, High, Medium, and Normal**.
+- Display the priority information with the relevant Disease Case.
+- Verify that Public Health Officers can identify high-priority cases.
+- Test prioritization using cases with different severity and risk conditions.
 
-## Proposed scope for design
+## Implementation design still to be completed
 
-The project story concept identifies case severity and outbreak risk as possible inputs to prioritization. Before implementation, the project team should define:
+Before marking this story Done, document the actual:
+- Input fields and source of outbreak-risk information.
+- Priority mapping or model logic.
+- ServiceNow table/field changes.
+- Flow, Business Rule, API, or other implementation components.
+- PHO interface and permission behavior.
+- Test cases covering severity and risk combinations.
 
-- The priority categories and their exact meaning.
-- The input attributes and data quality requirements.
-- Whether prioritization will use rules, a trained model, or a hybrid approach.
-- How the US-10 risk output will be consumed, if applicable.
-- Where the recommendation will appear on the Disease Case form or dashboard.
-- Who can view, override, or update the recommendation.
-- How recommendations will be logged and tested.
+These implementation details are not assumed in this document because the story remains In Progress.
 
-No specific priority labels, formula, thresholds, model, or field names are asserted here because those details have not yet been implemented or confirmed.
+## Verification plan
 
-## Potential ServiceNow components
-
-These are design candidates, not implemented components:
-
-- Additional case-priority field or related recommendation record.
-- Business Rule or Flow Designer orchestration.
-- REST integration with an external prioritization service, if a model-based approach is selected.
-- PHO-facing list or dashboard indicator.
-- Audit information recording recommendation and human override.
-
-## Acceptance criteria to define
-
-1. A recommendation is generated only when the required input fields are available.
-2. The recommendation and its rationale are visible to authorized PHO users.
-3. The PHO can distinguish a system-generated recommendation from a human decision.
-4. Invalid or incomplete inputs are handled without corrupting the case record.
-5. The behavior is tested across representative severity and risk combinations.
-6. The feature does not present an unvalidated recommendation as a medical or public-health directive.
-
-## Testing plan (future)
-
-- Test all defined priority categories.
-- Test missing and invalid input values.
-- Test interaction with US-10 risk output, if selected.
-- Test role-based visibility and modification permissions.
-- Test whether a human override is recorded.
-- Document false-high and false-low prioritization cases.
+1. Prepare synthetic cases covering different severity levels.
+2. Supply or simulate the applicable outbreak-risk inputs.
+3. Verify the assigned priority against the implemented mapping.
+4. Confirm the priority is visible to PHO users.
+5. Test missing or invalid inputs.
+6. Record test results and screenshots.
 
 ## Evidence
 
-No US-11 implementation screenshots or test results are available because this story has not been implemented. Add Jira planning evidence and later implementation/test screenshots when work is completed.
-
-## Responsible-use note
-
-Any prioritization logic must be evaluated for bias, data quality, explainability, and operational safety. A recommendation should support human review rather than replace professional judgment.
-
-## Dependencies
-
-- Disease Case data from US-01.
-- Severity and surveillance context.
-- US-10 risk prediction may be a potential input after its use is explicitly designed and verified.
+The supplied Jira screenshot shows PHDS-13 as In Progress. No US-11 implementation attachment was visible in that screenshot. Add implementation and test screenshots only after they exist.
 
 ## Related stories
 
