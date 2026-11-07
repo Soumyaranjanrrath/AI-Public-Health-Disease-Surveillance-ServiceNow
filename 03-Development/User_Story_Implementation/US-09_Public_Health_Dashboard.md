@@ -1,57 +1,63 @@
 # US-09 – Public Health Dashboard and Analytics
 
+## Jira reference
+
+**Issue:** PHDS-11  
+**Status shown:** Done
+
 ## User story
 
-**As a** Public Health Officer, **I want** a dashboard containing surveillance metrics and analytics, **so that** I can monitor disease cases, laboratory verification, investigations, and outbreak alerts.
+**As a** Public Health Officer, **I want** to view disease surveillance information through a dashboard, **so that** I can monitor disease trends, locations, investigations, and possible outbreaks.
 
 ## Objective
 
-Provide a consolidated dashboard view of the surveillance information stored in the ServiceNow application.
+Provide a consolidated dashboard in ServiceNow Platform Analytics for public health surveillance monitoring.
 
 ## ServiceNow components
 
-- ServiceNow dashboard.
-- Configured reports and visualizations.
-- Disease Case, Laboratory Report, Investigation, and Outbreak Alert data sources.
-- Public Health Officer access.
+- Public Health Disease Surveillance Dashboard.
+- ServiceNow Platform Analytics.
+- Summary and analytical visualizations based on application records.
 
-## Dashboard scope
+The exact report names, widget titles, chart types, and filters should be recorded from dashboard screenshots.
 
-The project story scope identifies these surveillance indicators and analysis dimensions:
+## Dashboard summary visualizations listed in Jira
 
 - Total disease cases.
 - Verified cases.
 - Active investigations.
 - Possible outbreak alerts.
-- Distribution by disease and location.
-- Reporting trends over time.
-- Severity distribution.
-- Investigation status.
 
-The exact widget titles, chart types, report filters, and source-table configurations should be taken from dashboard screenshots rather than inferred from this high-level list.
+## Analytical visualizations listed in Jira
+
+- Cases by disease.
+- Cases by location.
+- Cases by severity.
+- Cases by case status.
+- Investigations by investigation status.
+- Outbreak alerts by alert status.
 
 ## Implementation summary
 
-1. Dashboard components were configured using the application's surveillance records and reports.
-2. The dashboard supports monitoring of case, verification, investigation, and alert information.
-3. Public Health Officer access is used for the surveillance monitoring workflow.
+The Jira completion note states that the Public Health Disease Surveillance Dashboard was developed and configured in ServiceNow Platform Analytics. It records the summary visualizations and analytical breakdowns listed above.
 
 ## Verification
 
-The project owner reports US-09 as completed and verified. Actual dashboard screenshots and individual widget details will be attached when project evidence is uploaded.
+**Jira status:** Done.
 
-## Evidence to attach
+The project owner reports US-09 as completed and verified. The Jira issue has an attachment named `US-09.jpeg`. The actual dashboard screenshot should also be added to the repository evidence folder and linked below.
 
-- Complete dashboard overview.
-- Individual chart/report configurations where useful.
-- Example dashboard data using synthetic records.
-- Jira completion evidence.
+## Evidence
 
-Suggested locations: `../../../../ScreenShots/Phase-03/` and `../../../../ScreenShots/Phase-04/`. Replace these folder references with exact relative image links once the screenshot files are added.
+- Jira completion evidence: `../../../../ScreenShots/Phase-01/Jira_User_Stories/Jira_US-09_PHDS-11.png`
+- Dashboard screenshot and analytics views: `../../../../ScreenShots/Phase-03/`
+- Dashboard test evidence: `../../../../ScreenShots/Phase-04/`
+
+Replace the phase-folder references with exact screenshot filenames when uploaded.
 
 ## Notes
 
-Dashboard values depend on the records available in the ServiceNow instance at the time of viewing. Use synthetic data in public screenshots and avoid exposing patient-level personal information.
+Dashboard values depend on the records available in ServiceNow at viewing time. Use synthetic data in public screenshots and do not expose patient-level personal information.
 
 ## Related stories
 
