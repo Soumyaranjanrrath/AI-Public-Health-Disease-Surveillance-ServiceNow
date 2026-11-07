@@ -57,7 +57,7 @@ This evidence supports the System Administrator role and table-access configurat
 
 ## Evidence
 
-- Jira issue screenshot: `../../../../ScreenShots/Phase-01/Jira_User_Stories/Jira_US-06_PHDS-8.png`
+- Jira issue screenshot: `../../ScreenShots/Phase-01/Jira_User_Stories/Jira_US-06_PHDS-8.png`
 - Application roles, navigator modules, ACL configuration, and administrative access tests: add actual ServiceNow screenshots under `ScreenShots/Phase-03/` and `ScreenShots/Phase-04/`.
 
 Two supplied Jira screenshots show the same issue PHDS-8. They are separate views of one Jira story, not separate user stories.
