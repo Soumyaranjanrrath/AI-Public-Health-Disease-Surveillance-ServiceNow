@@ -1,75 +1,62 @@
-# US-12 – AI-Assisted Investigation Insights
+# US-12 – Field Investigation Officer: AI-Assisted Investigation Insights
+
+## Jira reference
+
+**Issue:** PHDS-14  
+**Status shown:** In Progress  
+**Jira assignee shown:** ANAMU YASHWANT
 
 ## User story
 
-**As a** Field Investigation Officer, **I want** the system to provide AI-assisted insights from investigation information, **so that** investigation findings can be reviewed and summarized more efficiently.
+**As a** Field Investigation Officer, **I want** the system to analyze investigation findings and provide useful insights, **so that** important patterns can be identified more efficiently.
 
-## Status
+## Current status
 
-<badge>Planned – Not implemented</badge>
+<badge color="info">In Progress – Not completed</badge>
 
-The project owner has confirmed that US-12 is pending. This document describes a future enhancement only and does not claim that an AI model, API, prompt, ServiceNow flow, or summary interface has been implemented.
+This story is active in Jira but has not been reported as completed or verified.
 
-## Proposed objective
+## Completion criteria recorded in Jira
 
-Explore an AI-assisted capability that can summarize investigation records and highlight patterns in the information entered by Field Investigation Officers.
+The Jira issue describes the required capability as follows:
 
-## Proposed scope for design
+- Analyze investigation information such as field findings, exposure history, and contact-tracing details.
+- Generate a useful summary or identify potential patterns.
+- Potential patterns include common exposures, locations, or contact clusters.
+- Associate the generated insight with the relevant investigation or disease case.
+- Verify the result using sample investigation records.
 
-Before development, define:
+## Implementation design still to be completed
 
-- Which Investigation fields are eligible for analysis.
-- Whether exposure, contact, location, date, symptom, or other information is included.
-- Whether the feature generates a concise summary, potential patterns, suggested follow-up questions, or a combination.
-- Which model or service will perform the analysis.
-- How sensitive investigation information will be protected.
-- How outputs will be reviewed, corrected, and stored.
-- Which roles may view or request insights.
+Before marking this story Done, document the actual:
+- Investigation fields submitted for analysis.
+- AI model or service selected.
+- Prompt, rule, or analysis logic.
+- ServiceNow integration and data flow.
+- Insight display and record-association design.
+- User review/correction process.
+- Privacy and access controls.
+- Test cases and observed outputs.
 
-The exact investigation data fields and output format must be confirmed from the application and agreed user story before implementation.
+These components are not represented as implemented because the story remains In Progress.
 
-## Potential ServiceNow components
+## Verification plan
 
-These are possible design elements, not completed components:
-
-- An action or UI control for requesting an insight.
-- A Flow Designer flow or server-side integration.
-- A secured external AI endpoint, if selected.
-- A result field or related insight record.
-- A PHO/FIO review mechanism and audit trail.
-
-## Acceptance criteria to define
-
-1. Only authorized users can request or view investigation insights.
-2. The service uses only the approved investigation information.
-3. The output is clearly marked as AI-generated.
-4. The user can review and correct the output before treating it as a case record or report.
-5. The application handles empty, invalid, or excessively long source content.
-6. The feature avoids exposing personal or sensitive information to an unapproved external service.
-7. Test cases cover incomplete data, contradictory findings, and unsupported conclusions.
-
-## Testing plan (future)
-
-- Test a complete synthetic investigation record.
-- Test records with missing fields.
-- Test conflicting or ambiguous findings.
-- Verify authorization for requesting and viewing insights.
-- Verify that outputs are stored or displayed as designed.
-- Verify that no sensitive data is sent outside the approved environment.
+1. Prepare synthetic investigation records with field findings.
+2. Include approved synthetic exposure-history and contact-tracing examples.
+3. Generate a summary or pattern insight.
+4. Verify that the insight is associated with the correct investigation or disease case.
+5. Review the output for unsupported statements and omitted context.
+6. Test role permissions and handling of missing data.
+7. Save screenshots and test outcomes.
 
 ## Evidence
 
-No US-12 implementation screenshots or test results are available because this story has not been implemented. Add Jira planning evidence now and implementation/test evidence after development.
+The supplied Jira screenshot shows PHDS-14 as In Progress. No Jira attachment filename was visible in that screenshot. Add implementation and test screenshots only after they exist.
 
-## Responsible-use note
+## Responsible-use and privacy note
 
-AI-generated summaries may omit context or produce unsupported statements. Investigation insights must remain advisory and require review by authorized personnel. Do not send real patient or investigation data to an external model without an approved privacy and security design.
-
-## Dependencies
-
-- Investigation records and workflow from US-04.
-- Role and access configuration from US-06.
-- Potential dashboard presentation through US-09.
+Investigation details may contain sensitive personal information. Do not send real investigation or patient data to an external AI service without an approved security and privacy design. Generated insights must be reviewed by authorized personnel.
 
 ## Related stories
 
