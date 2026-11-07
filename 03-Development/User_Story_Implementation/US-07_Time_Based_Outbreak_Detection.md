@@ -1,71 +1,61 @@
 # US-07 – Time-Based Outbreak Detection
 
+## Jira reference
+
+**Issue:** PHDS-9  
+**Status shown:** Done
+
 ## User story
 
-**As a** Public Health Officer, **I want** outbreak monitoring to consider cases reported within a defined time window and check for an existing matching alert, **so that** recent disease clusters can be identified without repeatedly creating the same disease-location alert.
+**As a** Public Health Officer, **I want** the system to detect disease case clusters within a defined time window and location, **so that** possible outbreaks can be identified more accurately.
 
 ## Objective
 
-Extend the initial threshold-based outbreak monitoring flow with a reporting-date condition and duplicate-alert prevention.
+Extend the initial threshold-based outbreak monitoring flow with a reporting-date condition and logic to maintain the case count of an existing alert when new matching cases are reported.
 
 ## ServiceNow components
 
 - Flow Designer flow: `Outbreak Alert Monitoring`.
 - Disease Case Lookup Records action.
 - Outbreak Alert Lookup Records action.
-- Threshold and duplicate-prevention conditions.
-- Outbreak Alert Create Record action.
+- Threshold and duplicate-alert conditions.
+- Create Record and existing-alert update logic.
 
-## Implemented logic
-
-The updated flow is structured as follows:
+## Implemented logic described by the project evidence
 
 1. Trigger when a Disease Case is created.
-2. Look up Disease Case records matching the trigger's Disease Name.
-3. Match the trigger's Location.
-4. Apply the relative reporting-date condition: Date Reported is within the configured seven-day lookback (shown in the flow condition as relative after seven days ago).
-5. Check whether the first lookup count is greater than or equal to 3.
-6. Look up existing Outbreak Alert records matching the trigger Disease Name and Location.
-7. Check whether the existing-alert lookup count is zero.
-8. Create an Outbreak Alert only when no matching alert is found.
+2. Look up Disease Case records matching the trigger's Disease Name and Location.
+3. Apply the configured seven-day relative Date Reported condition.
+4. Check whether the matching case count reaches the configured threshold of 3.
+5. Look up existing Outbreak Alert records matching the disease and location.
+6. If no matching alert exists, create a new Outbreak Alert.
+7. If a matching alert already exists, synchronize/update the Case Count on that existing alert when new matching cases are submitted.
 
-## Alert creation
+The Jira completion note explicitly records both alert creation when the threshold is reached and synchronization of the case count on existing alerts.
 
-The Create Record action uses the matching Disease Case lookup count for Case Count and maps disease and location from the trigger. The alert also includes the configured threshold, status, time-window, description, and detection-date fields.
+## Outbreak Alert information
 
-The implementation history includes a screenshot where the Time Window value in the Create Record mapping appeared as 6, despite the seven-day lookup condition. Confirm the stored mapping and correct it to the intended value before treating that field mapping as verified. The flow's seven-day date condition and the Outbreak Alert's Time Window field are separate configuration items.
+The original Create Record mapping included disease name, location, case count, threshold, alert status, time-window value, description, and detection-date information.
 
-## Duplicate-alert behavior
-
-The duplicate check searches existing Outbreak Alert records matching disease and location. Alert creation is nested under the condition that the matching-alert lookup count equals zero.
-
-This prevents another alert for a disease-location combination when a matching alert already exists. It does not automatically remove duplicate alerts created by earlier versions of the flow.
+The implementation history includes a screenshot where the Time Window value in the Create Record mapping appeared as 6, while the lookup condition was set to seven days. Verify the stored Time Window field mapping separately. The seven-day lookup condition and the stored alert Time Window field are separate configuration items.
 
 ## Verification
 
-The project owner reports US-07 as completed and verified. Earlier test data included multiple outbreak alert records created before duplicate prevention was added. Those historical records should not be described as evidence that the updated duplicate-prevention branch failed.
+Jira issue PHDS-9 is shown as Done. Its completion note states that the seven-day detection flow was tested successfully, including threshold and time-window conditions.
 
-The exact test record IDs for inside-window, outside-window, and existing-alert scenarios should be linked from the Jira screenshots when supplied.
+The project history also records earlier alert records generated before duplicate-alert prevention was added. Historical duplicates should not be treated as evidence that the updated branch failed.
 
-## Evidence checklist
+## Evidence
 
-Add actual screenshots for:
+- Jira completion evidence: `../../../../ScreenShots/Phase-01/Jira_User_Stories/Jira_US-07_PHDS-9.png`
+- Flow configuration and seven-day filter: `../../../../ScreenShots/Phase-03/`
+- Threshold, alert creation, and case-count synchronization tests: `../../../../ScreenShots/Phase-04/`
 
-1. Complete Outbreak Alert Monitoring flow.
-2. Disease Case lookup conditions showing disease and location matching.
-3. Seven-day relative Date Reported condition.
-4. Threshold condition (lookup count greater than or equal to 3).
-5. Existing Outbreak Alert lookup conditions.
-6. Duplicate-prevention condition (existing-alert lookup count equals zero).
-7. Create Outbreak Alert field mappings.
-8. Generated alert and test result.
-9. Inside-window and outside-window test evidence.
-
-Place screenshots under `ScreenShots/Phase-03/` and `ScreenShots/Phase-04/` and update this document with their exact filenames.
+Replace folder references with exact filenames when the ServiceNow screenshots are uploaded.
 
 ## Configuration caution
 
-A relative condition such as "after seven days ago" is evaluated relative to the flow execution time according to the platform's relative-date behavior. Do not claim it is anchored to the trigger record's reporting timestamp unless that behavior has been separately demonstrated.
+A relative condition such as "Date Reported relative after seven days ago" is evaluated according to the platform's relative-date behavior. Do not claim it is anchored to the trigger record's Date Reported value unless that has been independently demonstrated.
 
 ## Related stories
 
