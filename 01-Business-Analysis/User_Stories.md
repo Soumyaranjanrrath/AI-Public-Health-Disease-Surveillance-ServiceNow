@@ -4,161 +4,139 @@
 
 This document lists the twelve user stories used to organize development of the AI-Enabled Public Health Disease Surveillance and Outbreak Response Platform.
 
-Jira was used to manage and track the stories. The project owner reports that US-01 through US-10 are completed and verified. US-11 and US-12 are pending.
+Jira was used to manage the stories and track implementation progress. The supplied Jira screenshots show US-01 to US-09 marked Done, and US-11 and US-12 marked In Progress. The project owner reports US-10 as completed and verified, but its Jira issue screenshot was not included in the supplied batch.
 
-## 2. User story status
+## 2. User story and Jira status
 
-| ID | Story | Actor | Status |
-|---|---|---|---|
-| US-01 | Disease Case Reporting | Hospital Staff | Completed and verified |
-| US-02 | Laboratory Verification | Laboratory Officer | Completed and verified |
-| US-03 | Public Health Officer Case Review | Public Health Officer | Completed and verified |
-| US-04 | Field Investigation Management | Field Investigation Officer | Completed and verified |
-| US-05 | Outbreak Monitoring | Public Health Officer | Completed and verified |
-| US-06 | System Administration | System Administrator | Completed and verified |
-| US-07 | Time-Based Outbreak Detection | Public Health Officer | Completed and verified |
-| US-08 | Outbreak Alert Notifications | Public Health Officer | Completed and verified |
-| US-09 | Public Health Dashboard and Analytics | Public Health Officer | Completed and verified |
-| US-10 | AI-Based Outbreak Risk Prediction | Public Health Officer | Completed and verified |
-| US-11 | AI-Assisted Case Prioritization | Public Health Officer | Planned |
-| US-12 | AI-Assisted Investigation Insights | Field Investigation Officer | Planned |
+| ID | User story | Actor | Jira issue | Jira status shown | Project status |
+|---|---|---|---|---|---|
+| US-01 | Disease Case Reporting | Hospital Staff | PHDS-1 | Done | Completed and verified |
+| US-02 | Laboratory Verification | Laboratory Officer | PHDS-2 | Done | Completed and verified |
+| US-03 | Public Health Officer Case Review | Public Health Officer | PHDS-5 | Done | Completed and verified |
+| US-04 | Field Investigation Management | Field Investigation Officer | PHDS-6 | Done | Completed and verified |
+| US-05 | Outbreak Monitoring | Public Health Officer | PHDS-7 | Done | Completed and verified |
+| US-06 | System Administration | System Administrator | PHDS-8 | Done | Completed and verified |
+| US-07 | Time-Based Outbreak Detection | Public Health Officer | PHDS-9 | Done | Completed and verified |
+| US-08 | Outbreak Alert Notifications | Public Health Officer | PHDS-10 | Done | Completed and verified |
+| US-09 | Public Health Dashboard and Analytics | Public Health Officer | PHDS-11 | Done | Completed and verified |
+| US-10 | AI-Based Outbreak Risk Prediction | Public Health Officer | Not supplied | Not shown | Completed and verified, per project owner |
+| US-11 | AI-Assisted Case Prioritization | Public Health Officer | PHDS-13 | In Progress | In progress; not completed |
+| US-12 | AI-Assisted Investigation Insights | Field Investigation Officer | PHDS-14 | In Progress | In progress; not completed |
 
 ## 3. User story details
 
-### US-01 – Disease Case Reporting
+### US-01 – Disease Case Reporting (PHDS-1)
 
-**As a** Hospital Staff member,  
-**I want** to register disease cases in the application,  
-**So that** reported cases are stored centrally and can be reviewed by authorized public health personnel.
+**As a** Hospital Staff member, **I want** to report a suspected or confirmed disease case, **so that** the case can be recorded for public health surveillance.
 
-**Scope:** Disease Case record creation and capture of configured patient, disease, clinical, status, reporting-date, location, and reporting-facility information.
+**Completion evidence in Jira:** The Disease Case table was created and required fields were configured, including case status, severity, patient information, reporting facility, and reference fields. The completion note identifies test record `DSC0001014`.
 
-**Status:** Completed and verified, according to project Jira tracking.
+**Jira status shown:** Done.
 
-### US-02 – Laboratory Verification
+### US-02 – Laboratory Verification (PHDS-2)
 
-**As a** Laboratory Officer,  
-**I want** to record laboratory reports linked to disease cases,  
-**So that** test results and verification status are available in the surveillance workflow.
+**As a** Laboratory Officer, **I want** to review and update laboratory results for a disease case, **so that** the reported case can be verified.
 
-**Scope:** Laboratory Report records linked to a Disease Case, including configured test name, date, result, verification status, and attachment information.
+**Completion evidence in Jira:** The Laboratory Report table was created with a Disease Case reference, Test Name, Test Date, Result, Verification Status, and Report Attachment fields. A report was linked to `DSC0001014` with a Positive result and Pending verification status in the recorded test.
 
-**Status:** Completed and verified.
+**Jira status shown:** Done.
 
-### US-03 – Public Health Officer Case Review
+### US-03 – Public Health Officer Case Review (PHDS-5)
 
-**As a** Public Health Officer,  
-**I want** to review disease case information,  
-**So that** I can assess reported cases using the available surveillance details.
+**As a** Public Health Officer, **I want** to review reported and verified disease cases, **so that** I can decide what action is required for each case.
 
-**Scope:** PHO review access to relevant disease case information under the configured read-only policy.
+**Completion evidence in Jira:** PHO can view disease, case status, laboratory verification status, severity, reporting date, symptom onset date, patient information, and location details. The completion note states that PHO access is read-only and the officer cannot modify case records.
 
-**Status:** Completed and verified.
+**Jira status shown:** Done.
 
-### US-04 – Field Investigation Management
+### US-04 – Investigation Management (PHDS-6)
 
-**As a** Field Investigation Officer,  
-**I want** to create and maintain investigation records,  
-**So that** field investigation activities can be tracked in the application.
+**As a** Field Investigation Officer, **I want** to update investigation details for an assigned disease case, **so that** investigation findings can be recorded in the system.
 
-**Scope:** Investigation record management with permissions configured for the Field Investigation Officer role.
+**Completion evidence in Jira:** FIO can create and view Investigation records and update Investigation Status, Findings, Contact Tracing Information, and other relevant details. The officer can modify existing records but cannot delete them.
 
-**Status:** Completed and verified.
+**Jira status shown:** Done.
 
-### US-05 – Outbreak Monitoring
+### US-05 – Outbreak Monitoring (PHDS-7)
 
-**As a** Public Health Officer,  
-**I want** the application to monitor disease cases for configured disease-location clusters,  
-**So that** a potential outbreak can be identified when the defined case threshold is reached.
+**As a** Public Health Officer, **I want** to monitor disease cases by location and time, **so that** I can identify possible outbreak situations.
 
-**Scope:** Automated matching of disease and location values, evaluation of the configured case-count threshold, and creation of an Outbreak Alert when the configured conditions are satisfied.
+**Completion evidence in Jira:** Threshold-based outbreak monitoring was configured to evaluate Disease Case records by disease name and location. When the matching case count reached the threshold of 3, the system created an Outbreak Alert containing disease name, location, case count, detection date, threshold, alert status, time window, and description. Three Dengue cases from Bhubaneswar generated alert `OUA0001001` with Case Count = 3 and Threshold = 3.
 
-**Status:** Completed and verified.
+**Jira status shown:** Done.
 
-### US-06 – System Administration
+### US-06 – User and System Management (PHDS-8)
 
-**As a** System Administrator,  
-**I want** to manage application configuration and access,  
-**So that** the application can be maintained and users can perform authorized operations.
+**As an** Administrator, **I want** to manage users, roles, hospitals, and disease information, **so that** the surveillance platform remains properly configured and controlled.
 
-**Scope:** Application roles, access controls, and administrative permissions for configured custom tables.
+**Completion evidence in Jira:** The System Administrator role was configured with full Create, Read, Write, and Delete permissions for the application's core tables: Disease Case, Hospital, Laboratory Report, Investigation, and Outbreak Alert. The completion note states that the administrator can access and manage application data and configuration.
 
-**Status:** Completed and verified.
+**Jira status shown:** Done.
 
-### US-07 – Time-Based Outbreak Detection
+**Scope clarification:** This evidence supports the role and table-access configuration. It does not, by itself, establish that a separate custom user-management interface was developed.
 
-**As a** Public Health Officer,  
-**I want** outbreak monitoring to consider cases reported within a defined time window and check for an existing matching alert,  
-**So that** recent disease clusters can be identified without repeatedly creating the same disease-location alert.
+### US-07 – Time-Based Outbreak Detection (PHDS-9)
 
-**Scope:** Time-window condition, threshold evaluation, lookup of existing alerts, and conditional alert creation.
+**As a** Public Health Officer, **I want** the system to detect disease case clusters within a defined time window and location, **so that** possible outbreaks can be identified more accurately.
 
-**Status:** Completed and verified.
+**Completion evidence in Jira:** The completion note records seven-day time-based outbreak detection using Disease Name, Location, and case-count threshold. It also states that the workflow creates alerts when the threshold is reached and synchronizes the Case Count of existing alerts when new cases are submitted. The workflow was tested for threshold and time-window conditions.
 
-### US-08 – Outbreak Alert Notifications
+**Jira status shown:** Done.
 
-**As a** Public Health Officer,  
-**I want** to receive notifications when an outbreak alert is generated,  
-**So that** relevant alert information is communicated to the appropriate public health personnel.
+### US-08 – Outbreak Alert Notification (PHDS-10)
 
-**Scope:** Configured notifications associated with outbreak alert creation, including relevant disease, location, count, threshold, and status information.
+**As a** Public Health Officer, **I want** to receive a notification when a possible outbreak is detected, **so that** I can take timely action.
 
-**Status:** Completed and verified.
+**Completion evidence in Jira:** An automated Outbreak Alert Notification was configured to notify the Public Health Officers group whenever an Outbreak Alert record is inserted or updated. The notification includes alert number, disease name, affected location, case count, threshold, alert status, detection date, and description. Gmail SMTP was configured for outbound email; the notification was tested by updating a sample Outbreak Alert and verifying generation and delivery to the configured recipient.
 
-### US-09 – Public Health Dashboard and Analytics
+**Jira status shown:** Done.
 
-**As a** Public Health Officer,  
-**I want** a dashboard containing surveillance metrics and analytics,  
-**So that** I can monitor disease cases, laboratory verification, investigations, and outbreak alerts.
+### US-09 – Public Health Dashboard and Analytics (PHDS-11)
 
-**Scope:** Configured dashboard components and analytics based on application data.
+**As a** Public Health Officer, **I want** to view disease surveillance information through a dashboard, **so that** I can monitor disease trends, locations, investigations, and possible outbreaks.
 
-**Status:** Completed and verified.
+**Completion evidence in Jira:** A Public Health Disease Surveillance Dashboard was configured in ServiceNow Platform Analytics. The completion note lists summary visualizations for total disease cases, verified cases, active investigations, and possible outbreak alerts, plus analytical visualizations by disease, location, severity, case status, investigation status, and outbreak alert status.
+
+**Jira status shown:** Done.
 
 ### US-10 – AI-Based Outbreak Risk Prediction
 
-**As a** Public Health Officer,  
-**I want** the application to obtain an ML-based outbreak risk estimate using current and historical case information,  
-**So that** I can view a prototype risk assessment alongside surveillance information.
+**As a** Public Health Officer, **I want** the application to obtain an ML-based outbreak risk estimate using current and historical case information, **so that** I can view a prototype risk assessment alongside surveillance information.
 
-**Scope:** External FastAPI prediction service using a trained Logistic Regression model. The API calculates historical and seven-day features and returns Low, Medium, or High risk, confidence, class probabilities, and a feature summary.
+**Implementation evidence available:** The supplied FastAPI source implements `/health` and `/predict`, loads a persisted Logistic Regression model, derives historical and seven-day features, and returns risk level, confidence, class scores, and feature summary. The supplied local test result reports PASS with High risk and confidence 0.7193 for its synthetic sample.
 
-**Status:** Completed and verified, according to the project owner. Supplied local API evidence includes a sample request and a passing prediction result.
+**Jira status:** No US-10 Jira screenshot was included in the supplied batch. The project owner reports US-10 as completed and verified.
 
-**Limitation:** The model uses synthetic prototype data and analyst-assigned labels and is not clinically or epidemiologically validated.
+**Model limitation:** The model was trained using synthetic prototype surveillance data and synthetic analyst-assigned risk labels. It is not clinically or epidemiologically validated.
 
-### US-11 – AI-Assisted Case Prioritization
+### US-11 – AI-Assisted Case Prioritization (PHDS-13)
 
-**As a** Public Health Officer,  
-**I want** the system to provide an AI-assisted priority recommendation for disease cases,  
-**So that** cases that may require earlier review can be identified for attention.
+**As a** Public Health Officer, **I want** disease cases to be prioritized based on severity and outbreak risk, **so that** high-priority cases can be reviewed first.
 
-**Scope:** Planned enhancement. The prioritization categories, input factors, model or rules, UI behavior, and validation approach must be defined before implementation.
+**Completion criteria recorded in Jira:** Implement an AI-assisted case prioritization mechanism using disease case severity and outbreak risk information. Configure priority levels such as Critical, High, Medium, or Normal. Display the priority with the relevant Disease Case, verify PHO visibility, and test cases with different severity and risk conditions.
 
-**Status:** Planned / not implemented.
+**Jira status shown:** In Progress. This story is not completed.
 
-### US-12 – AI-Assisted Investigation Insights
+### US-12 – AI-Assisted Investigation Insights (PHDS-14)
 
-**As a** Field Investigation Officer,  
-**I want** the system to provide AI-assisted insights from investigation information,  
-**So that** investigation findings can be reviewed and summarized more efficiently.
+**As a** Field Investigation Officer, **I want** the system to analyze investigation findings and provide useful insights, **so that** important patterns can be identified more efficiently.
 
-**Scope:** Planned enhancement. The source fields, analysis method, output format, user review process, and validation approach must be defined before implementation.
+**Completion criteria recorded in Jira:** Develop an AI-assisted capability to analyze field findings, exposure history, and contact tracing details. Generate a useful summary or identify potential patterns such as common exposures, locations, or contact clusters. Associate the insight with the relevant investigation or disease case and verify the result using sample investigation records.
 
-**Status:** Planned / not implemented.
+**Jira status shown:** In Progress. This story is not completed.
 
-## 4. Story dependencies and workflow sequence
+## 4. Jira tracking and evidence
 
-The stories follow the overall surveillance process:
+The supplied screenshot batch includes:
+- One Jira issue screenshot each for US-01 through US-05 and US-07 through US-09.
+- Two screenshots of US-06 (PHDS-8).
+- One screenshot each for US-11 (PHDS-13) and US-12 (PHDS-14).
+- No US-10 Jira issue screenshot.
 
-`US-01 → US-02 → US-03 → US-04 → US-05 → US-07 → US-08 → US-09 → US-10`
+See [Jira Tracking and Evidence](Jira_Tracking.md) for the screenshot inventory and issue mapping.
 
-US-06 provides the application role and administrative foundation used across the workflows. US-11 and US-12 are planned enhancements building on case and investigation data.
+## 5. Logical workflow
 
-This sequence describes the logical process and documentation grouping; it does not imply that every story was implemented in strict chronological order.
+The stories cover disease intake, laboratory verification, PHO review, investigation, outbreak monitoring, notification, dashboard analytics, and risk prediction. US-06 provides role and administration capabilities across the application. US-11 and US-12 extend the application with planned AI-assisted capabilities.
 
-## 5. Jira and evidence
-
-Jira was used to track the user stories and record completion. Screenshots captured after story implementation are intended to be stored in the repository's `ScreenShots/` folders and referenced from each story's implementation document.
-
-No Jira issue identifiers or screenshot filenames are listed here because those exact values have not yet been supplied for this document.
+This grouping describes the end-to-end solution workflow; it does not imply that stories were implemented in strict numerical order.
