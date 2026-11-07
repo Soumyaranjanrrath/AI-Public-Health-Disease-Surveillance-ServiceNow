@@ -52,7 +52,7 @@ These components are not represented as implemented because the story remains In
 
 ## Evidence
 
-The supplied Jira screenshot shows PHDS-14 as In Progress. No Jira attachment filename was visible in that screenshot. Add implementation and test screenshots only after they exist.
+The supplied Jira screenshot shows PHDS-14 as In Progress. No Jira attachment filename was visible in the supplied issue view. See [Jira issue screenshot](../../ScreenShots/Phase-01/Jira_User_Stories/Jira_US-12_PHDS-14.png). Add implementation and test screenshots only after they exist.
 
 ## Responsible-use and privacy note
 
