@@ -1,12 +1,17 @@
-# US-01 – Disease Case Reporting
+# US-01 – Hospital Staff: Disease Case Reporting
+
+## Jira reference
+
+**Issue:** PHDS-1  
+**Status shown:** Done
 
 ## User story
 
-**As a** Hospital Staff member, **I want** to register disease cases in the application, **so that** reported cases are stored centrally and can be reviewed by authorized public health personnel.
+**As a** Hospital Staff member, **I want** to report a suspected or confirmed disease case, **so that** the case can be recorded for public health surveillance.
 
 ## Objective
 
-Provide an application form and a Disease Case record structure for capturing disease reports submitted by hospital staff.
+Provide a Disease Case table and form for capturing suspected or confirmed disease reports submitted by hospital staff.
 
 ## ServiceNow components
 
@@ -14,11 +19,11 @@ Provide an application form and a Disease Case record structure for capturing di
 - Disease Case custom table.
 - Disease Case form and configured fields.
 - Hospital/reporting-facility information.
-- Application role and associated access configuration.
+- Hospital Staff application role and access configuration.
 
-## Data captured
+## Fields and information captured
 
-The Disease Case form described during implementation includes the following information:
+The Jira completion note confirms configuration of required fields, case status, severity, patient information, reporting facility, and reference fields. The implementation context identifies these form fields:
 
 - Disease Name
 - Disease Status
@@ -33,33 +38,31 @@ The Disease Case form described during implementation includes the following inf
 - Symptoms
 - Description
 
-Additional fields may exist in the instance; this list reflects the fields recorded in the project implementation context.
+Exact internal dictionary names and field types should be confirmed from the ServiceNow dictionary or implementation screenshots.
 
 ## Implementation summary
 
 1. The Disease Case table was created in the scoped application.
-2. The case form was configured to capture patient, disease, clinical, date, location, and reporting-facility information.
-3. The Hospital/reporting-facility information is available to support case reporting.
-4. The Hospital Staff role is used for the reporting workflow.
+2. The form was configured to capture disease, case status, severity, patient information, reporting facility, and reference information.
+3. Hospital/reporting-facility information was included in the reporting workflow.
+4. The Hospital Staff role was configured for the reporting workflow.
 
 ## Verification
 
-The project notes record a test Disease Case record:
+The Jira completion note states that a disease case record was successfully created and verified:
 
 - **Test record:** `DSC0001014`
 
-The project owner reports US-01 as completed and verified.
+**Jira status:** Done.
 
 ## Evidence
 
-Add the actual screenshots captured during implementation and Jira verification to the paths below when available.
+- Jira issue screenshot: `../../../../ScreenShots/Phase-01/Jira_User_Stories/Jira_US-01_PHDS-1.png`
+- Disease Case table/form and test record: add actual ServiceNow screenshots under `ScreenShots/Phase-03/` and `ScreenShots/Phase-04/`.
 
-- ServiceNow Disease Case table and form: `../../../../ScreenShots/Phase-03/`
-- Test record and Jira completion evidence: `../../../../ScreenShots/Phase-04/`
+## Privacy note
 
-## Limitations / notes
-
-Use synthetic patient data in public screenshots and example records. Remove or mask patient names and other personal information before publishing evidence.
+Use synthetic patient data in public screenshots. Mask real names, identifiers, contact details, and other personal information before publishing.
 
 ## Related stories
 
