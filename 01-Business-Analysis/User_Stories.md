@@ -137,6 +137,6 @@ See [Jira Tracking and Evidence](Jira_Tracking.md) for the screenshot inventory 
 
 ## 5. Logical workflow
 
-The stories cover disease intake, laboratory verification, PHO review, investigation, outbreak monitoring, notification, dashboard analytics, and risk prediction. US-06 provides role and administration capabilities across the application. US-11 and US-12 extend the application with planned AI-assisted capabilities.
+The stories cover disease intake, laboratory verification, PHO review, investigation, outbreak monitoring, notification, dashboard analytics, and risk prediction. US-06 provides role and administration capabilities across the application. US-11 and US-12 extend the application with AI-assisted capabilities that are currently In Progress in Jira.
 
 This grouping describes the end-to-end solution workflow; it does not imply that stories were implemented in strict numerical order.
