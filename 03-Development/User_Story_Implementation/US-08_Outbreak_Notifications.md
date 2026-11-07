@@ -47,9 +47,9 @@ The configured notification includes:
 
 ## Evidence
 
-- Jira completion evidence: `../../../../ScreenShots/Phase-01/Jira_User_Stories/Jira_US-08_PHDS-10.png`
-- Notification and SMTP configuration screenshots: `../../../../ScreenShots/Phase-03/`
-- Sample alert update and delivered-notification evidence: `../../../../ScreenShots/Phase-04/`
+- Jira completion evidence: `../../ScreenShots/Phase-01/Jira_User_Stories/Jira_US-08_PHDS-10.png`
+- Notification and SMTP configuration screenshots: `../../ScreenShots/Phase-03/`
+- Sample alert update and delivered-notification evidence: `../../ScreenShots/Phase-04/`
 
 Replace the phase-folder references with exact screenshot filenames when the implementation evidence is uploaded.
 
