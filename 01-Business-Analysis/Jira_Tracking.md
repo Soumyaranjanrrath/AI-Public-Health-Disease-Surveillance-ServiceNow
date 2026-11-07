@@ -27,19 +27,19 @@ Jira issue status is a project-tracking signal. It is not, by itself, independen
 
 The supplied Jira screenshots are organized by the issue they show. The original Jira attachment filenames visible in the issue pages are reproduced here as displayed.
 
-| Screenshot subject | Jira issue | Attachment filenames visible in Jira |
+| Screenshot subject | Jira issue | Original attachment filenames visible in Jira | Repository screenshot |
 |---|---|---|
-| US-01 – Disease Case Reporting | PHDS-1 | `image-20260831-150651.png`; `image-20260831-150614.png` |
-| US-02 – Laboratory Verification | PHDS-2 | `image2.jpeg`; `image1.jpeg` |
-| US-03 – PHO Case Review | PHDS-5 | `image-20260902-050631.png`; `WhatsApp Image 2026-08-31 at 10.41.05 PM.jpeg`; `WhatsApp Image 2026-08-31 at 10.40.48 PM.jpeg` |
-| US-04 – Investigation Management | PHDS-6 | `image3.jpeg`; `image4.jpeg` |
-| US-05 – Outbreak Monitoring | PHDS-7 | `Now11.jpeg`; `Nowwww.jpeg` |
-| US-06 – User and System Management | PHDS-8 | `image-20260902-045050.png`; `Screenshot 2026-09-02 101318.png` |
-| US-07 – Time-Based Outbreak Detection | PHDS-9 | `image-20261003-044428.png` |
-| US-08 – Outbreak Alert Notification | PHDS-10 | `Screenshot 2026-10-03 235152.png`; `Screenshot 2026-10-03 235126.png` |
-| US-09 – Dashboard and Analytics | PHDS-11 | `US-09.jpeg` |
-| US-11 – AI-Assisted Case Prioritization | PHDS-13 | No Jira attachment filename visible in the supplied screenshot. |
-| US-12 – AI-Assisted Investigation Insights | PHDS-14 | No Jira attachment filename visible in the supplied screenshot. |
+| US-01 – Disease Case Reporting | PHDS-1 | `image-20260831-150651.png`; `image-20260831-150614.png` | [Jira_US-01_PHDS-1.png](../ScreenShots/Phase-01/Jira_User_Stories/Jira_US-01_PHDS-1.png) |
+| US-02 – Laboratory Verification | PHDS-2 | `image2.jpeg`; `image1.jpeg` | [Jira_US-02_PHDS-2.png](../ScreenShots/Phase-01/Jira_User_Stories/Jira_US-02_PHDS-2.png) |
+| US-03 – PHO Case Review | PHDS-5 | `image-20260902-050631.png`; `WhatsApp Image 2026-08-31 at 10.41.05 PM.jpeg`; `WhatsApp Image 2026-08-31 at 10.40.48 PM.jpeg` | [Jira_US-03_PHDS-5.png](../ScreenShots/Phase-01/Jira_User_Stories/Jira_US-03_PHDS-5.png) |
+| US-04 – Investigation Management | PHDS-6 | `image3.jpeg`; `image4.jpeg` | [Jira_US-04_PHDS-6.png](../ScreenShots/Phase-01/Jira_User_Stories/Jira_US-04_PHDS-6.png) |
+| US-05 – Outbreak Monitoring | PHDS-7 | `Now11.jpeg`; `Nowwww.jpeg` | [Jira_US-05_PHDS-7.png](../ScreenShots/Phase-01/Jira_User_Stories/Jira_US-05_PHDS-7.png) |
+| US-06 – User and System Management | PHDS-8 | `image-20260902-045050.png`; `Screenshot 2026-09-02 101318.png` | [Jira_US-06_PHDS-8.png](../ScreenShots/Phase-01/Jira_User_Stories/Jira_US-06_PHDS-8.png) and [duplicate view](../ScreenShots/Phase-01/Jira_User_Stories/Jira_US-06_PHDS-8_duplicate-view.png) |
+| US-07 – Time-Based Outbreak Detection | PHDS-9 | `image-20261003-044428.png` | [Jira_US-07_PHDS-9.png](../ScreenShots/Phase-01/Jira_User_Stories/Jira_US-07_PHDS-9.png) |
+| US-08 – Outbreak Alert Notification | PHDS-10 | `Screenshot 2026-10-03 235152.png`; `Screenshot 2026-10-03 235126.png` | [Jira_US-08_PHDS-10.png](../ScreenShots/Phase-01/Jira_User_Stories/Jira_US-08_PHDS-10.png) |
+| US-09 – Dashboard and Analytics | PHDS-11 | `US-09.jpeg` | [Jira_US-09_PHDS-11.png](../ScreenShots/Phase-01/Jira_User_Stories/Jira_US-09_PHDS-11.png) |
+| US-11 – AI-Assisted Case Prioritization | PHDS-13 | No Jira attachment filename visible in the supplied screenshot. | [Jira_US-11_PHDS-13.png](../ScreenShots/Phase-01/Jira_User_Stories/Jira_US-11_PHDS-13.png) |
+| US-12 – AI-Assisted Investigation Insights | PHDS-14 | No Jira attachment filename visible in the supplied screenshot. | [Jira_US-12_PHDS-14.png](../ScreenShots/Phase-01/Jira_User_Stories/Jira_US-12_PHDS-14.png) |
 
 Two supplied screenshots show the US-06 / PHDS-8 Jira issue. They are two views of the same issue, not two different user stories. The supplied batch contains no Jira issue screenshot for US-10.
 
