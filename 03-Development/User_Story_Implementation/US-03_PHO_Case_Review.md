@@ -51,7 +51,7 @@ Exact ACL names and individual test identifiers should be transcribed from the S
 
 ## Evidence
 
-- Jira issue screenshot: `../../../../ScreenShots/Phase-01/Jira_User_Stories/Jira_US-03_PHDS-5.png`
+- Jira issue screenshot: `../../ScreenShots/Phase-01/Jira_User_Stories/Jira_US-03_PHDS-5.png`
 - PHO role, case review, impersonation, and read-only verification: add actual ServiceNow screenshots under `ScreenShots/Phase-03/` and `ScreenShots/Phase-04/`.
 
 ## Privacy note
