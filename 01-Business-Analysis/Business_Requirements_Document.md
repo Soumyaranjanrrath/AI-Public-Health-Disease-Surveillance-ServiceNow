@@ -67,12 +67,12 @@ These statements describe the intended problem and project scope; they are not c
 - External ML API integration for prototype outbreak risk prediction.
 - Testing, evidence collection, and deployment documentation.
 
-### 6.2 Planned extensions
+### 6.2 In-progress extensions
 
 - US-11: AI-Assisted Case Prioritization.
 - US-12: AI-Assisted Investigation Insights.
 
-These two stories are not part of the completed implementation at the time of this document.
+These two stories are marked In Progress in Jira and are not part of the completed implementation at the time of this document.
 
 ### 6.3 Out of scope / limitations
 
