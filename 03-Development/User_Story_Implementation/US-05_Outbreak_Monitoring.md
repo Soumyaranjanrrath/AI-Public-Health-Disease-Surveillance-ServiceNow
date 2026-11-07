@@ -60,7 +60,7 @@ The project owner reports US-05 as completed and verified.
 
 ## Evidence
 
-- Jira issue screenshot: `../../../../ScreenShots/Phase-01/Jira_User_Stories/Jira_US-05_PHDS-7.png`
+- Jira issue screenshot: `../../ScreenShots/Phase-01/Jira_User_Stories/Jira_US-05_PHDS-7.png`
 - Flow configuration: add the actual ServiceNow screenshot under `ScreenShots/Phase-03/`.
 - Three matching test cases and generated alert OUA0001001: add actual ServiceNow screenshots under `ScreenShots/Phase-04/`.
 
