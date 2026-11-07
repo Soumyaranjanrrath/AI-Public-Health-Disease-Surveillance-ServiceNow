@@ -80,11 +80,11 @@ The requirements are grouped by workflow area and mapped to the project user sto
 | FR-28 | The prediction response shall include the risk level, confidence, class probabilities, and feature summary. | US-10 |
 | FR-29 | The API shall expose a health-check endpoint. | US-10 |
 
-## 11. Planned AI enhancements
+## 11. In-progress AI enhancements
 
 The following requirements are in progress and are not yet implemented:
 
-| ID | Planned requirement | Related story |
+| ID | In-progress requirement | Related story |
 |---|---|---|
 | FR-30 | The system may recommend a priority category for a disease case using configured case information and risk indicators. | US-11 |
 | FR-31 | The system may generate AI-assisted summaries or insights from investigation information. | US-12 |
@@ -132,6 +132,6 @@ The following are design and operational considerations rather than claims of fo
 
 ## 15. Requirement status
 
-FR-01 through FR-29 correspond to US-01 through US-10, which the project owner reports as completed and verified. FR-30 and FR-31 are planned and map to US-11 and US-12.
+FR-01 through FR-29 correspond to US-01 through US-10, which the project owner reports as completed and verified. FR-30 and FR-31 map to US-11 and US-12, which are In Progress in Jira and not yet completed or verified.
 
 Detailed acceptance evidence will be added to the individual user-story and testing documentation.
