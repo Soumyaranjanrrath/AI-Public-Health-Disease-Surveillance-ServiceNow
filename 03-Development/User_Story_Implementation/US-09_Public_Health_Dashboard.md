@@ -49,9 +49,9 @@ The project owner reports US-09 as completed and verified. The Jira issue has an
 
 ## Evidence
 
-- Jira completion evidence: `../../../../ScreenShots/Phase-01/Jira_User_Stories/Jira_US-09_PHDS-11.png`
-- Dashboard screenshot and analytics views: `../../../../ScreenShots/Phase-03/`
-- Dashboard test evidence: `../../../../ScreenShots/Phase-04/`
+- Jira completion evidence: `../../ScreenShots/Phase-01/Jira_User_Stories/Jira_US-09_PHDS-11.png`
+- Dashboard screenshot and analytics views: `../../ScreenShots/Phase-03/`
+- Dashboard test evidence: `../../ScreenShots/Phase-04/`
 
 Replace the phase-folder references with exact screenshot filenames when uploaded.
 
