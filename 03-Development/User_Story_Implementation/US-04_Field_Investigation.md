@@ -51,7 +51,7 @@ The project notes record test investigation `INV0001003`. The project owner repo
 
 ## Evidence
 
-- Jira issue screenshot: `../../../../ScreenShots/Phase-01/Jira_User_Stories/Jira_US-04_PHDS-6.png`
+- Jira issue screenshot: `../../ScreenShots/Phase-01/Jira_User_Stories/Jira_US-04_PHDS-6.png`
 - Investigation table, form, test record, and create/read/update/delete checks: add actual ServiceNow screenshots under `ScreenShots/Phase-03/` and `ScreenShots/Phase-04/`.
 
 ## Notes
