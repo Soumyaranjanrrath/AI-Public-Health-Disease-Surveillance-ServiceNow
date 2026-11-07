@@ -53,7 +53,7 @@ The project includes five application roles.
 
 **Access note:** The project configuration intends PHO case access to be read-only. Actual table and field permissions are enforced by ServiceNow roles and ACLs.
 
-**Related user stories:** US-03, US-05, US-07, US-08, US-09, US-10. Planned: US-11.
+**Related user stories:** US-03, US-05, US-07, US-08, US-09, US-10. In Progress: US-11.
 
 ### 3.4 Field Investigation Officer (FIO)
 
@@ -67,7 +67,7 @@ The project includes five application roles.
 
 **Access note:** The configured role allows investigation record creation, reading, and updating while preventing deletion, as described in the project implementation notes.
 
-**Related user story:** US-04 – Field Investigation Management. Planned: US-12.
+**Related user story:** US-04 – Field Investigation Management. In Progress: US-12.
 
 ### 3.5 System Administrator
 
