@@ -47,9 +47,9 @@ The project history also records earlier alert records generated before duplicat
 
 ## Evidence
 
-- Jira completion evidence: `../../../../ScreenShots/Phase-01/Jira_User_Stories/Jira_US-07_PHDS-9.png`
-- Flow configuration and seven-day filter: `../../../../ScreenShots/Phase-03/`
-- Threshold, alert creation, and case-count synchronization tests: `../../../../ScreenShots/Phase-04/`
+- Jira completion evidence: `../../ScreenShots/Phase-01/Jira_User_Stories/Jira_US-07_PHDS-9.png`
+- Flow configuration and seven-day filter: `../../ScreenShots/Phase-03/`
+- Threshold, alert creation, and case-count synchronization tests: `../../ScreenShots/Phase-04/`
 
 Replace folder references with exact filenames when the ServiceNow screenshots are uploaded.
 
