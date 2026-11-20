@@ -2,7 +2,6 @@
 
 A ServiceNow-based public health surveillance platform for disease case reporting, laboratory verification, field investigations, outbreak monitoring, alert notifications, surveillance analytics, and machine-learning-assisted outbreak risk prediction.
 
-> **Implementation status:** US-01 through US-10 are reported as completed and verified. US-11 and US-12 are currently **In Progress** in Jira and are not yet completed.
 
 ## Overview
 
