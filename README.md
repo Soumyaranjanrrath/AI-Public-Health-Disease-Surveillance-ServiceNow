@@ -33,11 +33,6 @@ The application is organized around role-based workflows for Hospital Staff, Lab
 - External FastAPI service for ML-based outbreak risk prediction.
 - Application roles and ACL-based access control.
 
-## In-progress capabilities
-
-- **US-11 – AI-Assisted Case Prioritization:** Jira status In Progress; not yet completed.
-- **US-12 – AI-Assisted Investigation Insights:** Jira status In Progress; not yet completed.
-
 ## Technology stack
 
 | Area | Technology |
