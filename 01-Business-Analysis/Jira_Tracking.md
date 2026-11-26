@@ -19,7 +19,7 @@ Jira issue status is a project-tracking signal. It is not, by itself, independen
 | US-07 – Public Health Officer: Time-Based Outbreak Detection | PHDS-9 | Done | Seven-day time-window detection and updating case count on existing alerts. |
 | US-08 – Public Health Officer: Outbreak Alert Notification | PHDS-10 | Done | Notification to PHO group on alert insert/update; Gmail SMTP delivery tested. |
 | US-09 – Public Health Officer: Public Health Dashboard and Analytics | PHDS-11 | Done | Dashboard summary and analytical visualizations in ServiceNow Platform Analytics. |
-| US-10 – AI-Based Outbreak Risk Prediction | Not visible in supplied screenshot batch | Not shown | Project owner reports completed and verified; API source and local test result supplied separately. |
+| US-10 – AI-Based Outbreak Risk Prediction | PHDS-12 | Done | Project owner reports completed and verified; API source and local test result supplied separately. |
 | US-11 – Public Health Officer: AI-Assisted Case Prioritization | PHDS-13 | In Progress | Priority based on case severity and outbreak risk; priority levels specified. |
 | US-12 – Field Investigation Officer: AI-Assisted Investigation Insights | PHDS-14 | In Progress | Analyze findings, exposure history, and contact tracing; generate summaries/pattern insights. |
 

@@ -2,7 +2,6 @@
 
 A ServiceNow-based public health surveillance platform for disease case reporting, laboratory verification, field investigations, outbreak monitoring, alert notifications, surveillance analytics, and machine-learning-assisted outbreak risk prediction.
 
-> **Implementation status:** US-01 through US-10 are reported as completed and verified. US-11 and US-12 are currently **In Progress** in Jira and are not yet completed.
 
 ## Overview
 
@@ -107,9 +106,9 @@ See [US-10 API documentation](03-Development/US-10_ML_API/README.md) and [US-10 
 | US-07 – Time-Based Outbreak Detection | PHDS-9 | Done | Completed and verified |
 | US-08 – Outbreak Alert Notifications | PHDS-10 | Done | Completed and verified |
 | US-09 – Public Health Dashboard and Analytics | PHDS-11 | Done | Completed and verified |
-| US-10 – AI-Based Outbreak Risk Prediction | Not visible in supplied Jira screenshots | To be confirmed | Completed and verified, per project owner |
-| US-11 – AI-Assisted Case Prioritization | PHDS-13 | In Progress | In progress; not completed |
-| US-12 – AI-Assisted Investigation Insights | PHDS-14 | In Progress | In progress; not completed |
+| US-10 – AI-Based Outbreak Risk Prediction | PHDS-12 | Done | Completed and verified |
+| US-11 – AI-Assisted Case Prioritization | PHDS-13 | Done | Completed and verified |
+| US-12 – AI-Assisted Investigation Insights | PHDS-14 | Done | Completed and verified |
 
 See [Jira Tracking and Evidence](01-Business-Analysis/Jira_Tracking.md) for screenshot mapping and the observed issue details.
 
